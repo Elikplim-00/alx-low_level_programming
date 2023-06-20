@@ -1,11 +1,12 @@
 #include "main.h"
 /**
  *main - Entry point
- *Return: Always 0
+ *print_alphabet - print all alphabet in lowercase
  */
 void print_alphabet(void)
 {
 	char letter = 'a';
+	
 	while (letter <= 'z')
 	{
 		_putchar(letter);
