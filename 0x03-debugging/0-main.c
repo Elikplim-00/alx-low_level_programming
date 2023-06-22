@@ -6,8 +6,10 @@
  */
 int main(void)
 {
+	/* Declaration */
 	int i;
 
+	/* Initialization */
 	i = 0;
 	positive_or_negative(i);
 	return (0);
