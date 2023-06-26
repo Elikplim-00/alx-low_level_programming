@@ -11,17 +11,15 @@ int main(void)
 {
     int i;
     int sum = 0;
-    char password[84];
+    char password[15];
 
     srand(time(0));
 
-    for (i = 0; i < 8; i++)
+    for (i = 0; i < 11; i++)
     {
-        password[i] = rand() % 94 + 33; /* ASCII range: 33-126 */
+        password[i] = rand() % 94 + 32; /* ASCII range: 32-125 */
         sum += password[i];
     }
-
-    password[i] = '\0';
 
     password[i++] = sum / 10 + '0';
     password[i++] = sum % 10 + '0';
