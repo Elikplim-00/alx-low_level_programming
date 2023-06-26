@@ -1,31 +1,18 @@
 #include "main.h"
 
 /**
- * print_triangle - Prints a triangle of a given size
- *
- * @size: The size of the triangle
+ * _puts - Prints a string, followed by a new line, to stdout.
+ * @str: Pointer to the string.
  */
-void print_triangle(int size)
+void _puts(char *str)
 {
-	int i, j, spaces;
-
-	if (size <= 0)
+	/* Iterate through the string and print each character */
+	while (*str != '\0')
 	{
-		_putchar('\n');
-		return;
+		_putchar(*str);
+		str++;
 	}
 
-	for (i = 0; i < size; i++)
-	{
-		spaces = size - 1 - i;
-		for (j = 0; j < spaces; j++)
-		{
-			_putchar(' ');
-		}
-		for (j = 0; j <= i; j++)
-		{
-			_putchar('#');
-		}
-		_putchar('\n');
-	}
+	/* Print a new line character */
+	_putchar('\n');
 }
