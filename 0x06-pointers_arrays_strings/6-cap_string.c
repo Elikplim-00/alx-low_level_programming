@@ -27,6 +27,10 @@ char *cap_string(char *str)
 			str[i] = toupper(str[i]);
 			capitalize = 0;
 		}
+		else
+		{
+			capitalize = 0;
+		}
 
 		i++;
 	}
