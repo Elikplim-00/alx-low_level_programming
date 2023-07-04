@@ -3,7 +3,7 @@
 char *_strpbrk(char *s, char *accept)
 {
     if (s == NULL || accept == NULL)
-        return NULL;
+        return (NULL);
 
     while (*s != '\0')
     {
@@ -17,5 +17,5 @@ char *_strpbrk(char *s, char *accept)
         s++;
     }
 
-    return NULL;
+    return (NULL);
 }
