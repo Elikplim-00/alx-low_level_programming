@@ -6,7 +6,6 @@
  * @x: The first number.
  * @y: The second number.
  *
- * Description: This macro takes two numbers x and y as input and returns their sum.
  * It simply adds the two numbers together using the `+` operator.
  *
  * Return: The sum of x and y.
